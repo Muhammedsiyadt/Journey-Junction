@@ -1,67 +1,67 @@
 /* template-color */
 
 .scroll-top{
-  background-color: #004909;
+  background-color: black;
 }
 
 .handle-preloader{
-	background-color: #004909;
+	background-color: rgb(0, 0, 0);
 }
 
 .preloader-close{
-	color: #ff7c5b;
+	color: gray;
 }
 
 .main-menu .navigation > li.current > a,
 .main-menu .navigation > li:hover > a{
-  color: #004909 !important;
+  color: #000000 !important;
 }
 
 .main-header .menu-right-content .user-link a:hover{
-  background: #ff7c5b !important;
+  background: gray !important;
 }
 
 .main-header .search-box-btn:hover{
-  background: #ff7c5b !important;
+  background: gray !important;
 }
 
 .main-menu .navigation > li > ul > li > a:hover,
 .main-menu .navigation > li > .megamenu li > a:hover{
-	color: #ff7c5b;
+	color: gray;
 }
 
 .main-menu .navigation > li > ul, 
 .main-menu .navigation > li > .megamenu,
 .main-menu .navigation > li > ul > li > ul{
-	border-top: 3px solid #ff7c5b
+	border-top: 3px solid gray
 }
 
 .main-menu .navigation > li > ul > li > ul > li > a:hover{
-  color: #ff7c5b;
+  color: gray;
 }
 
 .main-header .search-box-outer .dropdown-menu{
-	background: #ff7c5b;
+	background: gray;
 }
 
 .theme-btn{
-	background: #004909;
+	background: #000000;
 }
 
 .feature-block-one .inner-box .lower-content .icon-box{
-	color: #004909;
+	color: gray;
 }
 
 .image_block_1 .image-box .video-content .video-btn a{
-	color: #ff7c5b;
+	color: gray;
 }
 
 .border-animation{
-	border: 1px solid #ff7c5b;
+	border: 1px solid gray;
 }
 
 .tour-block-one .inner-box .image-box:before{
-	background: #004909;
+	background: rgba(128, 128, 128, 0.5);
 }
 
 .tour-block-one .inner-box .lower-content .rating span i{
@@ -69,24 +69,24 @@
 }
 
 .tour-block-one .inner-box .lower-content h3 a:hover{
-  color: #004909;
+  color: rgb(58, 58, 58);
 }
 
 .tour-block-one .inner-box .lower-content h4{
-	color: #ff7c5b;
+	color: gray;
 }
 
 .tour-block-one .inner-box .lower-content .btn-box a:hover{
-	background: #ff7c5b;
-	border-color: #ff7c5b;
+	background: gray;
+	border-color: gray;
 }
 
 .content_block_2 .content-box .price h4{
-	color: #ff7c5b;
+	color: gray;
 }
 
 .place-block-one .inner-box .text h3 a:hover{
-  color: #ff7c5b;
+  color: gray;
 }
 
 .testimonial-block-one .inner-box .rating-box li{
@@ -95,116 +95,116 @@
 
 .testimonial-section .owl-theme .owl-dots .owl-dot.active span,
 .testimonial-section .owl-theme .owl-dots .owl-dot span:hover{
-	border-color: #ff7c5b;
-	background: #ff7c5b;
+	border-color: gray;
+	background: gray;
 }
 
 .video-section .inner-box .video-btn a{
-	border: 5px solid #ff7c5b;
-	color: #ff7c5b;
+	border: 5px solid gray;
+	color: gray;
 }
 
 .theme-btn-two:hover{
-	border-color: #ff7c5b;
+	border-color: gray;
 }
 
 .news-block-one .inner-box .image-box{
-	background: #ff7c5b;
+	background: gray;
 }
 
 .news-block-one .inner-box .image-box .post-date i{
-	background: #ff7c5b;
+	background: gray;
 }
 
 .news-block-one .inner-box .lower-content .category a:hover{
-  background: #ff7c5b;
+  background: gray;
 }
 
 .news-block-one .inner-box .lower-content h3 a:hover{
-  color: #ff7c5b;
+  color: gray;
 }
 
 .news-block-one .inner-box .lower-content .post-info li a:hover{
-  color: #ff7c5b;
+  color: gray;
 }
 
 .footer-top .logo-widget .social-links li a:hover{
-  background: #ff7c5b;
+  background: gray;
 }
 
 .footer-top .links-widget .links-list li a:hover{
-  color: #ff7c5b;
+  color: gray;
 }
 
 .footer-top .links-widget .links-list li a:before{
-	background: #ff7c5b;
+	background: gray;
 }
 
 .footer-top .gallery-widget .image-list li .image-box{
-	background: #ff7c5b;
+	background: gray;
 }
 
 .footer-top .contact-widget .info-list li i{
-	color: #ff7c5b;
+	color: gray;
 }
 
 .footer-top .contact-widget .info-list li a:hover{
-  color: #ff7c5b;
+  color: gray;
 }
 
 .footer-bottom .copyright p a:hover{
-  color: #ff7c5b;
+  color: gray;
 }
 
 .footer-bottom .footer-nav li a:hover{
-  color: #ff7c5b;
+  color: gray;
 }
 
 .header-top .top-info li a:hover{
-  color: #ff7c5b;
+  color: gray;
 }
 
 .offer-block-one .inner-box .content-box h3 a:hover{
-  color: #ff7c5b;
+  color: gray;
 }
 
 .offer-block-one .inner-box .content-box h4{
-	color: #ff7c5b;
+	color: gray;
 }
 
 .offer-section .owl-theme .owl-dots .owl-dot.active span,
 .offer-section .owl-theme .owl-dots .owl-dot span:hover{
-  background: #ff7c5b !important;
+  background: gray !important;
 }
 
 .video-style-two .inner-container .inner-box .video-btn a{
-	border: 5px solid #ff7c5b;
-	color: #ff7c5b;
+	border: 5px solid gray;
+	color: gray;
 }
 
 .funfact-style-two .pattern-layer:before{
-	background: #ff7c5b;
+	background: gray;
 }
 
 .banner-carousel .owl-nav .owl-prev:hover,
 .banner-carousel .owl-nav .owl-next:hover{
-  background: #ff7c5b;
+  background: gray;
 }
 
 .content_block_3 .content-box .text a{
-	color: #ff7c5b;
+	color: gray;
 }
 
 .tour-block-two .inner-box .content-box h3 a:hover{
-	color: #ff7c5b;
+	color: gray;
 }
 
 .tour-block-two .inner-box .content-box .btn-box a:hover{
-	background: #ff7c5b;
+	background: gray;
 }
 
 .tour-block-two .inner-box .image-box:before{
-	background: #ff7c5b;
+	background: gray;
 }
 
 .tour-block-two .inner-box .content-box .rating span i{
@@ -212,96 +212,96 @@
 }
 
 .tour-block-two .inner-box .content-box h4{
-	color: #ff7c5b;
+	color: gray;
 }
 
 .dots-style-one .owl-dots .owl-dot.active span,
 .dots-style-one .owl-dots .owl-dot span:hover{
-	background-color: #ff7c5b;
-	border-color: #ff7c5b;
+	background-color: gray;
+	border-color: gray;
 }
 
 .deals-style-two .single-deals-box .inner-box .content-box h3 a:hover{
-  color: #ff7c5b;
+  color: gray;
 }
 
 .deals-style-two .single-deals-box .inner-box .content-box h4{
-	color: #ff7c5b;
+	color: gray;
 }
 
 .deals-style-two .owl-nav .owl-prev:hover,
 .deals-style-two .owl-nav .owl-next:hover{
-  background: #ff7c5b;
+  background: gray;
 }
 
 .single-feed-box .inner-box .link a:hover{
-  color: #ff7c5b;
+  color: gray;
 }
 
 .destination-details-content .country-details .details-list li i{
-	color: #ff7c5b;
+	color: gray;
 }
 
 .destination-details-content .country-details .details-list li a:hover{
-  color: #ff7c5b;
+  color: gray;
 }
 
 .destination-details-content .comment-box .comment-form .form-group input:focus,
 .destination-details-content .comment-box .comment-form .form-group textarea:focus{
-  border-color: #ff7c5b !important;
+  border-color: gray !important;
 }
 
 .default-sidebar .search-form .form-group input:focus{
-  border-color: #ff7c5b !important;
+  border-color: gray !important;
 }
 
 .default-sidebar .search-form .form-group input:focus + button,
 .default-sidebar .search-form .form-group button:hover{
-	color: #ff7c5b;
+	color: gray;
 }
 
 .default-sidebar .downloads-widget .download-links li a:hover{
-	color: #ff7c5b;
+	color: gray;
 }
 
 .default-sidebar .downloads-widget .download-links li a:hover i{
-  color: #ff7c5b;
+  color: gray;
 }
 
 .default-sidebar .post-widget .post .post-thumb{
-	background: #ff7c5b;
+	background: gray;
 }
 
 .default-sidebar .post-widget .post h4 a:hover{
-  color: #ff7c5b;
+  color: gray;
 }
 
 .default-sidebar .advice-widget .inner-box:before{
-	background: #ff7c5b;
+	background: gray;
 }
 
 .tours-page-section .item-shorting .right-column .menu-box button.on{
-	background: #ff7c5b;
-	border-color: #ff7c5b;
+	background: gray;
+	border-color: gray;
 }
 
 .pagination li a:hover,
 .pagination li a.current{
-	background: #ff7c5b;
+	background: gray;
 }
 
 .custom-check-box .custom-control.material-checkbox .material-control-input:checked ~ .material-control-indicator{
-	background: #ff7c5b !important;
-	border-color: #ff7c5b !important;
+	background: gray !important;
+	border-color: gray !important;
 }
 
 .range-slider .ui-slider .ui-slider-range{
-	background: #ff7c5b;
+	background: gray;
 }
 
 .range-slider .ui-state-default,
 .range-slider .ui-widget-content .ui-state-default{
-	background: #ff7c5b;
+	background: gray;
 }
 
 .custom-check-box .custom-controls-stacked .description i{
@@ -313,11 +313,11 @@
 }
 
 .page-title.style-three .inner-box h3{
-	color: #ff7c5b;
+	color: gray;
 }
 
 .tour-details-content .inner-box .text .info-list li i{
-	color: #ff7c5b;
+	color: gray;
 }
 
 .tour-details-content .overview-inner .overview-list li ul.included-list li:before{
@@ -325,28 +325,28 @@
 }
 
 .tour-details-content .overview-inner .overview-list li ul.excluded-list li:before{
-	color: #ff7c5b;
+	color: gray;
 }
 
 .tour-details-content .tour-plan .single-box span{
-	background: #ff7c5b;
+	background: gray;
 }
 
 .tour-details-content .tour-plan .single-box h4{
-	color: #ff7c5b;
+	color: gray;
 }
 
 .progress-box .bar-inner{
-	background: #ff7c5b;
+	background: gray;
 }
 
 .tour-details-content .review-box .text h2{
-	color: #ff7c5b;
+	color: gray;
 }
 
 .tour-details-content .comment-box .comment-form .form-group input:focus,
 .tour-details-content .comment-box .comment-form .form-group textarea:focus{
-	border-color: #ff7c5b !important;
+	border-color: gray !important;
 }
 
 .tour-details-content .comment-box .text .list li i{
@@ -355,41 +355,41 @@
 
 .tour-sidebar .tour-form .form-group input:focus,
 .tour-sidebar .tour-form .form-group textarea:focus{
-  border-color: #ff7c5b !important;
+  border-color: gray !important;
 }
 
 .team-block-one .inner-box .lower-content h3 a:hover{
-  color: #ff7c5b;
+  color: gray;
 }
 
 .team-block-one .inner-box .lower-content .social-links li a:hover{
-  background: #ff7c5b;
+  background: gray;
 }
 
 .booking-process-content .process-label li.current{
-  background: #ff7c5b;
+  background: gray;
 }
 
 .booking-process-content .processing-form .form-group input:focus,
 .booking-process-content .processing-form .form-group textarea:focus{
-  border-color: #ff7c5b !important;
+  border-color: gray !important;
 }
 
 .process-sidebar .content-box .info li i{
-	color: #ff7c5b;
+	color: gray;
 }
 
 .process-sidebar .content-box .price h4{
-	color: #ff7c5b;
+	color: gray;
 }
 
 .booking-process-2 .booking-process-content .process-label li:first-child{
-  color: #ff7c5b;
+  color: gray;
 }
 
 .booking-process-3 .booking-process-content .process-label li:first-child,
 .booking-process-3 .booking-process-content .process-label li:nth-child(2){
-  color: #ff7c5b;
+  color: gray;
 }
 
 .booking-process-content .confirm-box .inner-box .icon-box{
@@ -397,57 +397,57 @@
 }
 
 .booking-process-content .confirm-box .inner-box p a{
-	color: #ff7c5b;
+	color: gray;
 }
 
 .accordion-box .block .acc-btn.active{
-  background: #ff7c5b;
+  background: gray;
 }
 
 .faq-sidebar .sidebar-inner .faq-form .form-group input:focus,
 .faq-sidebar .sidebar-inner .faq-form .form-group textarea:focus{
-  border-color: #ff7c5b !important;
+  border-color: gray !important;
 }
 
 .register-section .inner-box .form-inner .social-links li a:hover{
-	background: #ff7c5b;
+	background: gray;
 }
 
 .register-section .inner-box .form-inner .form-group input:focus{
-  border-color: #ff7c5b !important;
+  border-color: gray !important;
 }
 
 .register-section .inner-box .form-inner .custom-check-box .custom-controls-stacked .description a{
-  color: #ff7c5b;
-  border-bottom: 1px solid #ff7c5b;
+  color: gray;
+  border-bottom: 1px solid gray;
 }
 
 .register-section .inner-box .form-inner .other-text a{
-  color: #ff7c5b;
+  color: gray;
 }
 
 .register-section .inner-box .form-inner .forgor-password a{
-  color: #ff7c5b;
+  color: gray;
 }
 
 .error-section .inner-box h1{
-	color: #ff7c5b;
+	color: gray;
 }
 
 .blog-sidebar .category-widget .category-list li a i{
-	color: #ff7c5b;
+	color: gray;
 }
 
 .blog-sidebar .category-widget .category-list li a:hover{
-	color: #ff7c5b;
+	color: gray;
 }
 
 .news-block-one .inner-box .lower-content h2 a:hover{
-  color: #ff7c5b;
+  color: gray;
 }
 
 .news-block-one .inner-box .lower-content .post-info li.comment a:hover{
-  color: #ff7c5b;
+  color: gray;
 }
 
 .blog-details-content .post-share-option .social-links li:first-child a{
@@ -463,24 +463,24 @@
 }
 
 .blog-details-content .comment-box .comment .reply-btn:hover{
-  color: #ff7c5b;
+  color: gray;
 }
 
 .blog-details-content .comments-form-area .form-inner .form-group input:focus,
 .blog-details-content .comments-form-area .form-inner .form-group textarea:focus{
-  border-color: #ff7c5b !important;
+  border-color: gray !important;
 }
 
 .single-info-box .inner-box .icon-box{
-	color: #ff7c5b;
+	color: gray;
 }
 
 .single-info-box .inner-box p a:hover{
-  color: #ff7c5b;
+  color: gray;
 }
 
 .single-info-box .inner-box:hover .icon-box{
-	background: #ff7c5b;
+	background: gray;
 }
 
 .content_block_5 .content-box .social-links li:first-child a{
@@ -497,9 +497,9 @@
 
 .contact-section .form-inner .form-group input:focus,
 .contact-section .form-inner .form-group textarea:focus{
-	border-color: #ff7c5b !important;
+	border-color: gray !important;
 }
 
 .news-block-one .inner-box .lower-content .category a{
-	background: #ff7c5b;
+	background: gray;
 }

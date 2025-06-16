@@ -11,7 +11,7 @@
 
 body {
   font-size:16px;
-  color:#808080;
+  color:#4b4b4b;
   line-height:28px;
   font-weight:400;
   background:#ffffff;
@@ -101,7 +101,7 @@ textarea:focus{
 p{
   position: relative;
   font-family: 'Work Sans', sans-serif;
-  color: #555555;
+  color: #313131;
   font-weight: 400;
   margin: 0px;
   transition: all 500ms ease;
@@ -111,7 +111,7 @@ h1,h2,h3,h4,h5,h6{
   position:relative;
   font-family: 'Work Sans', sans-serif;
   font-weight: 400;
-  color: #061a3a;
+  color: #000000;
   margin: 0px;
   transition: all 500ms ease;
 }
@@ -294,7 +294,7 @@ img {
   padding: 17.5px 41.5px;
   border-radius: 4px;
   z-index: 1;
-  box-shadow: 0px 15px 25px 0px rgba(255,124,91,0.3);
+  box-shadow: 0px 15px 25px 0px rgba(12, 12, 12, 0.24);
   transition: all 500ms ease;
 }
 
@@ -353,7 +353,7 @@ img {
   content: "";
   top: 110%;
   left: 50%;
-  background: #ff7c5b;
+  background: gray;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   border-radius: 50%;
@@ -410,7 +410,7 @@ img {
 }
 
 .sec-pad{
-  padding: 114px 0px 120px 0px;
+  padding: 114px 0px 43px 0px;
 }
 
 .sec-pad-2{
@@ -744,12 +744,12 @@ img {
   position:relative;
   display:block;
   text-align:center;
-  font-size:17px;
+  font-size:18px;
   line-height:30px;
   font-family: 'Work Sans', sans-serif;
   font-weight:500;
   opacity:1;
-  color: #004909a2;
+  color: gray;
   z-index:1;
   -webkit-transition:all 500ms ease;
   -moz-transition:all 500ms ease;
@@ -1186,7 +1186,7 @@ img {
   height: 100%;
   max-height: 100%;
   overflow-y: auto;
-  background: #004909;
+  background: #000000;
   padding: 0px 0px;
   z-index: 5;
   opacity: 0;
@@ -1729,17 +1729,17 @@ div#mCSB_1_container{
 
 .feature-block-one .inner-box .lower-content .icon-box{
   position: absolute;
-  left: 50%;
-  top: -40px;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 80px;
+      left: 50%;
+    top: -25px;
+    transform: translateX(-50%);
+    width: 65px;
+    height: 75px;
   line-height: 80px;
   background: #fff;
   text-align: center;
   border-radius: 50%;
   font-size: 40px;
-  box-shadow: 0px 15px 20px 0px rgba(0,0,0,0.06);
+  box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.075);
 }
 
 .feature-block-one .inner-box .lower-content h4{
@@ -2109,7 +2109,7 @@ div#mCSB_1_container{
   display: inline-block;
   font-size: 15px;
   line-height: 26px;
-  color: #061a3a;
+  color: #000000;
   font-weight: 500;
   border: 1px solid #e4e8e9;
   border-radius: 4px;
@@ -3238,6 +3238,7 @@ div#mCSB_1_container{
 .about-style-two{
   position: relative;
   padding: 150px 0px;
+  margin-top: 94px;
 }
 
 .about-style-two .content_block_1 .content-box{
@@ -4775,6 +4776,7 @@ div#mCSB_1_container{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  top: 115px;
 }
 
 .page-title:before{
