@@ -34,6 +34,135 @@
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet">
 
+    <style>
+        /* Resorts Section Styling */
+        .resorts-section {
+            margin-top: 100px;
+            
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #2d3436;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, #000000, #333333);
+            border-radius: 2px;
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .resort-card {
+            transition: all 0.4s ease;
+            border: 1px solid #00000021;
+            background-size: cover;
+            background-position: center;
+            color: rgb(0, 0, 0);
+            background: #000;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .resort-icon {
+            font-size: 2rem;
+            color: #fff;
+        }
+
+        .resort-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        .resort-description {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #fff;
+            margin-bottom: 1.5rem;
+        }
+
+        .resort-cta .btn {
+            transition: all 0.3s ease;
+            border-width: 2px;
+        }
+
+        .resort-cta .btn:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .resort-card:hover {
+            transform: translateY(-10px) scale(1.02);
+        }
+
+        .view-resorts-btn {
+            transition: all 0.3s ease;
+            background: linear-gradient(90deg, #0984e3, #6c5ce7);
+            border: none;
+            letter-spacing: 0.5px;
+            box-shadow: 0 4px 15px rgba(9, 132, 227, 0.3);
+        }
+
+        .view-resorts-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(9, 132, 227, 0.4);
+            background: linear-gradient(90deg, #0873c9, #5b4bd6);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .section-subtitle {
+                font-size: 1rem;
+            }
+
+            .resort-title {
+                font-size: 1.3rem;
+            }
+
+            .resort-description {
+                font-size: 0.95rem;
+            }
+
+            .view-resorts-btn {
+                font-size: 1rem;
+                padding: 10px 20px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .resorts-section {
+                padding: 3rem 0;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .resort-card {
+                margin-bottom: 1.5rem;
+            }
+        }
+    </style>
+
 </head>
 
 
@@ -80,7 +209,7 @@
                                     <ul class="navigation clearfix">
                                         <li><a href="index.html">Home</a></li>
                                         <li><a href="about.html">About</a></li>
-                                        <li class="current"><a href="resorts.html">Resorts</a></li>
+                                        <li class="current"><a>Resorts</a></li>
                                         <!-- <li><a href="">Gallery</a></li> -->
                                         <li class="dropdown d-block d-lg-none"><a href="">Book Now</a></li>
                                         <li><a href="">Blog</a></li>
@@ -164,12 +293,146 @@
         <section class="page-title centred" style="background-image: url(assets/images/NTRAVEL-img/banasura-resort);">
             <div class="auto-container">
                 <div class="content-box">
-                    <h1>About Us</h1>
-                    <p>Discover your next great adventure</p>
+                    <h1>Resorts</h1>
+                    <p>Discover your next Resorts</p>
                 </div>
             </div>
         </section>
         <!-- End Page Title -->
+
+        <!-- Top Resorts Section -->
+        <!-- Top Resorts Section -->
+        <section class="resorts-section py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title mt-5 mb-4">Explore the Top Resorts in Wayanad</h2>
+                    <p class="section-subtitle text-muted">Discover handpicked accommodations for every traveler's dream
+                        getaway</p>
+                </div>
+
+                <div class="row g-4 justify-content-center">
+                    <!-- Card 1 -->
+                    <div class="col-md-6 mb-5 col-lg-3">
+                        <div class="resort-card h-100 overflow-hidden  rounded-4 position-relative">
+                            <div class="card-overlay"></div>
+                            <div class="card-body p-4 position-relative z-index-1 text-center">
+                                <div class="resort-icon mb-3">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <h3 class="resort-title">Best Couple Resorts</h3>
+                                <p class="resort-description">
+                                    Private cottages, romantic settings, and perfect views for couples looking to escape
+                                    the ordinary.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-md-6 mb-5 col-lg-3">
+                        <div class="resort-card h-100 overflow-hidden  rounded-4 position-relative">
+                            <div class="card-overlay"></div>
+                            <div class="card-body p-4 position-relative z-index-1 text-center">
+                                <div class="resort-icon mb-3">
+                                    <i class="fas fa-ring"></i>
+                                </div>
+                                <h3 class="resort-title">Honeymoon Resorts</h3>
+                                <p class="resort-description">
+                                    From candle-lit dinners to private pool villas, our handpicked resorts create
+                                    unforgettable moments.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-md-6 mb-5 col-lg-3">
+                        <div class="resort-card h-100 overflow-hidden  rounded-4 position-relative">
+                            <div class="card-overlay"></div>
+                            <div class="card-body p-4 position-relative z-index-1 text-center">
+                                <div class="resort-icon mb-3">
+                                    <i class="fas fa-crown"></i>
+                                </div>
+                                <h3 class="resort-title">Luxury Resorts</h3>
+                                <p class="resort-description">
+                                    Stay in style at the top luxury resorts in Wayanad, offering modern amenities in
+                                    scenic settings.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="col-md-6 mb-5 col-lg-3">
+                        <div class="resort-card h-100 overflow-hidden  rounded-4 position-relative">
+                            <div class="card-overlay"></div>
+                            <div class="card-body p-4 position-relative z-index-1 text-center">
+                                <div class="resort-icon mb-3">
+                                    <i class="fas fa-swimming-pool"></i>
+                                </div>
+                                <h3 class="resort-title">Private Pool Villas</h3>
+                                <p class="resort-description">
+                                    Enjoy a romantic retreat with your own pool and serene views of Wayanad's
+                                    landscapes.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="col-md-6 mb-5 col-lg-3">
+                        <div class="resort-card h-100 overflow-hidden  rounded-4 position-relative">
+                            <div class="card-overlay"></div>
+                            <div class="card-body p-4 position-relative z-index-1 text-center">
+                                <div class="resort-icon mb-3">
+                                    <i class="fas fa-umbrella-beach"></i>
+                                </div>
+                                <h3 class="resort-title">Boutique Resorts</h3>
+                                <p class="resort-description">
+                                    Unique properties with charm, great for couples and families looking for something
+                                    different.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="col-md-6 mb-5 col-lg-3">
+                        <div class="resort-card h-100 overflow-hidden  rounded-4 position-relative">
+                            <div class="card-overlay"></div>
+                            <div class="card-body p-4 position-relative z-index-1 text-center">
+                                <div class="resort-icon mb-3">
+                                    <i class="fas fa-wallet"></i>
+                                </div>
+                                <h3 class="resort-title">Budget-Friendly</h3>
+                                <p class="resort-description">
+                                    Affordable stays in prime locations — great value without compromising on
+                                    experience.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 7 -->
+                    <div class="col-md-6 mb-5 col-lg-3">
+                        <div class="resort-card h-100 overflow-hidden  rounded-4 position-relative">
+                            <div class="card-overlay"></div>
+                            <div class="card-body p-4 position-relative z-index-1 text-center">
+                                <div class="resort-icon mb-3">
+                                    <i class="fas fa-map-marked-alt"></i>
+                                </div>
+                                <h3 class="resort-title">Experiential Stays</h3>
+                                <p class="resort-description">
+                                    Resorts offering spice farm visits, adventure trails, forest treks, and immersive
+                                    Wayanad experiences.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
 
         <!-- place-section -->
@@ -186,7 +449,7 @@
                             <div class="inner-box">
                                 <figure class="image-box"><img src="assets/images/resource/place-1.jpg" alt=""></figure>
                                 <div class="text">
-                                    <h3><a href="destination-details.html">New York City</a></h3>
+                                    <h3><a>New York City</a></h3>
                                 </div>
                             </div>
                         </div>
@@ -196,7 +459,7 @@
                             <div class="inner-box">
                                 <figure class="image-box"><img src="assets/images/resource/place-5.jpg" alt=""></figure>
                                 <div class="text">
-                                    <h3><a href="destination-details.html">Mont Blanc</a></h3>
+                                    <h3><a>Mont Blanc</a></h3>
                                 </div>
                             </div>
                         </div>
@@ -206,7 +469,7 @@
                             <div class="inner-box">
                                 <figure class="image-box"><img src="assets/images/resource/place-2.jpg" alt=""></figure>
                                 <div class="text">
-                                    <h3><a href="destination-details.html">Norway Lake</a></h3>
+                                    <h3><a>Norway Lake</a></h3>
                                 </div>
                             </div>
                         </div>
@@ -216,7 +479,7 @@
                             <div class="inner-box">
                                 <figure class="image-box"><img src="assets/images/resource/place-3.jpg" alt=""></figure>
                                 <div class="text">
-                                    <h3><a href="destination-details.html">Affrican Park</a></h3>
+                                    <h3><a>Affrican Park</a></h3>
                                 </div>
                             </div>
                         </div>
@@ -226,7 +489,7 @@
                             <div class="inner-box">
                                 <figure class="image-box"><img src="assets/images/resource/place-4.jpg" alt=""></figure>
                                 <div class="text">
-                                    <h3><a href="destination-details.html">Vietnam</a></h3>
+                                    <h3><a>Vietnam</a></h3>
                                 </div>
                             </div>
                         </div>
@@ -236,7 +499,7 @@
                             <div class="inner-box">
                                 <figure class="image-box"><img src="assets/images/resource/place-9.jpg" alt=""></figure>
                                 <div class="text">
-                                    <h3><a href="destination-details.html">Netherlands</a></h3>
+                                    <h3><a>Netherlands</a></h3>
                                 </div>
                             </div>
                         </div>
@@ -244,9 +507,10 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 place-block">
                         <div class="place-block-one">
                             <div class="inner-box">
-                                <figure class="image-box"><img src="assets/images/resource/place-10.jpg" alt=""></figure>
+                                <figure class="image-box"><img src="assets/images/resource/place-10.jpg" alt="">
+                                </figure>
                                 <div class="text">
-                                    <h3><a href="destination-details.html">Greece</a></h3>
+                                    <h3><a>Greece</a></h3>
                                 </div>
                             </div>
                         </div>
@@ -254,9 +518,10 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 place-block">
                         <div class="place-block-one">
                             <div class="inner-box">
-                                <figure class="image-box"><img src="assets/images/resource/place-11.jpg" alt=""></figure>
+                                <figure class="image-box"><img src="assets/images/resource/place-11.jpg" alt="">
+                                </figure>
                                 <div class="text">
-                                    <h3><a href="destination-details.html">Australia</a></h3>
+                                    <h3><a>Australia</a></h3>
                                 </div>
                             </div>
                         </div>
@@ -264,9 +529,10 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 place-block">
                         <div class="place-block-one">
                             <div class="inner-box">
-                                <figure class="image-box"><img src="assets/images/resource/place-12.jpg" alt=""></figure>
+                                <figure class="image-box"><img src="assets/images/resource/place-12.jpg" alt="">
+                                </figure>
                                 <div class="text">
-                                    <h3><a href="destination-details.html">Costa Rica</a></h3>
+                                    <h3><a>Costa Rica</a></h3>
                                 </div>
                             </div>
                         </div>
@@ -277,79 +543,92 @@
         <!-- place-section end -->
 
 
-        <!-- main-footer -->
         <footer class="main-footer bg-color-2">
-            <div class="footer-top pt-130">
+            <div class="footer-top">
                 <div class="vector-bg" style="background-image: url(assets/images/shape/shape-11.png);"></div>
                 <div class="auto-container">
                     <div class="row clearfix">
                         <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
                             <div class="footer-widget logo-widget">
-                                <figure class="footer-logo"><a href="index-2.html"><img src="assets/images/footer-logo.png" alt=""></a></figure>
+                                <figure class="footer-logo"><a><img src="assets/images/logo.png" alt=""></a></figure>
                                 <div class="text">
-                                    <p>Lorem ipsum dolor amet consetetur adi pisicing elit sed eiusm tempor in cididunt ut labore dolore magna aliqua enim.</p>
+                                    <p>From private pool villas to cozy cottages, Journey Junction helps you book the
+                                        top resorts in Wayanad with ease.</p>
                                 </div>
                                 <ul class="social-links clearfix">
-                                    <li><a href="index-2.html"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="index-2.html"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="index-2.html"><i class="fab fa-instagram"></i></a></li>
-                                    <li><a href="index-2.html"><i class="fab fa-google-plus-g"></i></a></li>
-                                    <li><a href="index-2.html"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a><i class="fab fa-twitter"></i></a></li>
+                                    <li><a><i class="fab fa-instagram"></i></a></li>
+                                    <li><a><i class="fab fa-google-plus-g"></i></a></li>
+                                    <li><a><i class="fab fa-linkedin-in"></i></a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
                             <div class="footer-widget links-widget">
                                 <div class="widget-title">
-                                    <h3>Services</h3>
+                                    <h3>Resorts</h3>
                                 </div>
                                 <div class="widget-content">
                                     <ul class="links-list clearfix">
-                                        <li><a href="index-2.html">About Us</a></li>
-                                        <li><a href="index-2.html">Listing</a></li>
-                                        <li><a href="index-2.html">How It Works</a></li>
-                                        <li><a href="index-2.html">Our Services</a></li>
-                                        <li><a href="index-2.html">Our Blog</a></li>
-                                        <li><a href="index-2.html">Contact Us</a></li>
+                                        <li><a>Couple Resorts</a></li>
+                                        <li><a>Honeymoon Resorts</a></li>
+                                        <li><a>Budget-Friendly Stays</a></li>
+                                        <li><a>Experiential Resorts</a></li>
+                                        <li><a>Verified local stays</a></li>
+                                        <li><a>Quick WhatsApp booking</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
-                            <div class="footer-widget gallery-widget">
+                            <div class="footer-widget links-widget">
                                 <div class="widget-title">
-                                    <h3>Gallery</h3>
+                                    <h3>Links</h3>
                                 </div>
                                 <div class="widget-content">
-                                    <ul class="image-list clearfix">
-                                        <li><figure class="image-box"><a href="gallery-1.html"><img src="assets/images/resource/footer-gallery-1.jpg" alt=""></a></figure></li>
-                                        <li><figure class="image-box"><a href="gallery-1.html"><img src="assets/images/resource/footer-gallery-2.jpg" alt=""></a></figure></li>
-                                        <li><figure class="image-box"><a href="gallery-1.html"><img src="assets/images/resource/footer-gallery-3.jpg" alt=""></a></figure></li>
-                                        <li><figure class="image-box"><a href="gallery-1.html"><img src="assets/images/resource/footer-gallery-4.jpg" alt=""></a></figure></li>
-                                        <li><figure class="image-box"><a href="gallery-1.html"><img src="assets/images/resource/footer-gallery-5.jpg" alt=""></a></figure></li>
-                                        <li><figure class="image-box"><a href="gallery-1.html"><img src="assets/images/resource/footer-gallery-6.jpg" alt=""></a></figure></li>
+                                    <ul class="links-list clearfix">
+                                        <li><a>About Us</a></li>
+                                        <li><a>Resorts</a></li>
+                                        <li><a>Contact Us</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
+
                         <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
                             <div class="footer-widget contact-widget">
                                 <div class="widget-title">
                                     <h3>Contacts</h3>
                                 </div>
+                                <div class="text mb-3">
+                                    <p>Whether you’re searching for the top resorts in Wayanad or planning your
+                                        honeymoon, our team is ready to help.
+                                    </p>
+                                </div>
                                 <div class="widget-content">
                                     <ul class="info-list clearfix">
-                                        <li><i class="fas fa-map-marker-alt"></i>Flat 20, Reynolds Neck, North Helenaville, FV77 8WS</li>
-                                        <li><i class="fas fa-microphone"></i><a href="tel:23055873407">+2(305) 587-3407</a></li>
-                                        <li><i class="fas fa-envelope"></i><a href="mailto:info@example.com">info@example.com</a></li>
+                                        <li>
+                                            <i class="fab fa-whatsapp"></i>
+                                            <a href="https://wa.me/919744161939" target="_blank">+91 97441 61939</a>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-phone"></i>
+                                            <a href="tel:+919633763916">+91 96337 63916</a>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-envelope"></i>
+                                            <a href="mailto:hello@journeyjunction.com">hello@journeyjunction.com</a>
+                                        </li>
                                     </ul>
                                 </div>
+
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom">
+            <!-- <div class="footer-bottom">
                 <div class="auto-container">
                     <div class="bottom-inner clearfix">
                         <div class="copyright pull-left">
@@ -361,7 +640,7 @@
                         </ul>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </footer>
         <!-- main-footer end -->
 
@@ -390,7 +669,6 @@
     <!-- main-js -->
     <script src="assets/js/script.js"></script>
 
-</body><!-- End of .page_wrapper -->
+</body>
 
-<!-- Mirrored from azim.commonsupport.com/Travio/destination.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 May 2025 10:16:32 GMT -->
 </html>
