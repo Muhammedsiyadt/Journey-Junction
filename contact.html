@@ -268,36 +268,18 @@
                             <form id="contact-form" class="default-form" onsubmit="return sendToWhatsApp()">
                                 <div class="row clearfix">
                                     <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                        <input type="text" id="name" name="username" placeholder="Your Name" required>
+                                        <input type="text" id="name" name="username" placeholder="Your Name" >
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-12 form-group">
                                         <input type="email" id="email" name="email" placeholder="Email Address"
-                                            required>
+                                            >
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                        <input type="text" id="phone" name="phone" placeholder="Phone Number" required>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                        <input type="date" id="date" name="date" required>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                        <select id="resortType" name="type" required class="form-control">
-                                            <option value="" disabled selected>Select Resort Type</option>
-                                            <option>Best Couple Resorts in Wayanad</option>
-                                            <option>Best Honeymoon Resorts in Wayanad</option>
-                                            <option>Luxury Resorts</option>
-                                            <option>Private Pool Villas</option>
-                                            <option>Boutique Resorts</option>
-                                            <option>Budget-Friendly Resorts</option>
-                                            <option>Experiential Stays</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                        <input type="text" id="budget" name="budget" placeholder="Your Budget" required>
+                                        <input type="text" id="phone" name="phone" placeholder="Phone Number" >
                                     </div>
                                     <div class="col-lg-12 col-md-12 col-sm-12 form-group">
                                         <textarea id="message" name="message" placeholder="Write your message here"
-                                            required></textarea>
+                                            ></textarea>
                                     </div>
                                     <div class="col-lg-12 col-md-12 col-sm-12 form-group message-btn">
                                         <button class="theme-btn" type="submit">Submit Now</button>
@@ -305,12 +287,25 @@
                                 </div>
                             </form>
 
+                            <!-- Toast container -->
+
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- contact-section end -->
+
+        <div class="position-fixed top-0 end-0 p-3" style="z-index: 1055">
+            <div id="formToast" class="toast align-items-center text-white bg-danger border-0" role="alert"
+                aria-live="assertive" aria-atomic="true">
+                <div class="d-flex">
+                    <div class="toast-body" id="toastMessage">Please fill in all fields.</div>
+                    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+                        aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
 
 
         <footer class="main-footer bg-color-2">
@@ -425,36 +420,57 @@
     </div>
 
 
+    <!-- Bootstrap JS + Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script -->
     <script>
-        function sendToWhatsApp() {
-            const name = document.getElementById("name").value.trim();
-            const email = document.getElementById("email").value.trim();
-            const phone = document.getElementById("phone").value.trim();
-            const date = document.getElementById("date").value;
-            const type = document.getElementById("resortType").value;
-            const budget = document.getElementById("budget").value.trim();
-            const message = document.getElementById("message").value.trim();
+  function sendToWhatsApp() {
+    const nameInput = document.getElementById("name");
+    const emailInput = document.getElementById("email");
+    const phoneInput = document.getElementById("phone");
+    const messageInput = document.getElementById("message");
 
-            if (!name || !email || !phone || !date || !type || !budget || !message) {
-                alert("Please fill in all fields.");
-                return false;
-            }
+    const name = nameInput.value.trim();
+    const email = emailInput.value.trim();
+    const phone = phoneInput.value.trim();
+    const message = messageInput.value.trim();
 
-            const text = `New Resort Inquiry 
-                        Name: ${name}
-                        Email: ${email}
-                        Phone: ${phone}
-                        Date: ${date}
-                        Resort Type: ${type}
-                        Budget: ${budget}
-                        Message: ${message}`;
+    // Update values to trimmed ones (optional, keeps data clean)
+    nameInput.value = name;
+    emailInput.value = email;
+    phoneInput.value = phone;
+    messageInput.value = message;
 
-            const url = `https://wa.me/919744161939?text=${encodeURIComponent(text)}`;
-            window.open(url, "_blank");
+    if (!name || !email || !phone || !message) {
+      showToast("Please fill in all fields properly (no empty spaces).");
+      return false;
+    }
 
-            return false; // Prevent actual form submission
-        }
-    </script>
+    const text = `New Resort Inquiry:
+Name: ${name}
+Email: ${email}
+Phone: ${phone}
+Message: ${message}`;
+
+    const url = `https://wa.me/919744161939?text=${encodeURIComponent(text)}`;
+    window.open(url, "_blank");
+
+    return false; // Prevent form submission
+  }
+
+  function showToast(msg) {
+    const toastEl = document.getElementById("formToast");
+    const toastBody = document.getElementById("toastMessage");
+    toastBody.textContent = msg;
+
+    const toast = new bootstrap.Toast(toastEl, {
+      delay: 5000 // Toast visible for 5 seconds
+    });
+    toast.show();
+  }
+</script>
+
 
 
     <!-- jequery plugins -->

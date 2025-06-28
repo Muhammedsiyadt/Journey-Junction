@@ -247,45 +247,81 @@
                     </div>
                     <div class="col-lg-7 col-md-12 col-sm-12 form-column">
                         <div class="form-inner">
-                            <form id="contact-form" class="default-form" onsubmit="return sendToWhatsApp()">
-                                <div class="row clearfix">
-                                    <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                        <input type="text" id="name" name="username" placeholder="Your Name" required>
+                            <form id="contact-form" class="default-form" onsubmit="return sendToWhatsApp()" novalidate>
+                                <div class="row g-2">
+                                    <!-- First Row - Name and Email -->
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="name" class="form-label">Your Name</label>
+                                            <input type="text" class="form-control form-control-lg" id="name"
+                                                name="username" required>
+                                        </div>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                        <input type="email" id="email" name="email" placeholder="Email Address"
-                                            required>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="email" class="form-label">Email Address</label>
+                                            <input type="email" class="form-control form-control-lg" id="email"
+                                                name="email" required>
+                                        </div>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                        <input type="text" id="phone" name="phone" placeholder="Phone Number" required>
+
+                                    <!-- Second Row - Phone and Date -->
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="phone" class="form-label">Phone Number</label>
+                                            <input type="tel" class="form-control form-control-lg" id="phone"
+                                                name="phone" required>
+                                        </div>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                        <input type="date" id="date" name="date" required>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="date" class="form-label">dd---yyyy</label>
+                                            <input type="date" class="form-control form-control-lg" id="date"
+                                                name="date" required>
+                                        </div>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                        <select id="resortType" name="type" required class="form-control">
-                                            <option value="" disabled selected>Select Resort Type</option>
-                                            <option>Best Couple Resorts in Wayanad</option>
-                                            <option>Best Honeymoon Resorts in Wayanad</option>
-                                            <option>Luxury Resorts</option>
-                                            <option>Private Pool Villas</option>
-                                            <option>Boutique Resorts</option>
-                                            <option>Budget-Friendly Resorts</option>
-                                            <option>Experiential Stays</option>
-                                        </select>
+
+                                    <!-- Third Row - Resort Type and Budget -->
+                                    <div class="col-lg-6">
+                                        <div class="form-group" >
+                                            <label for="resortType" class="form-label">Select Resort Type</label>
+                                            <select class="form-select form-select-lg" id="resortType" name="type">
+                                                <option value="" disabled selected>Select Resort Type</option>
+                                                <option>Best Couple Resorts in Wayanad</option>
+                                                <option>Best Honeymoon Resorts in Wayanad</option>
+                                                <option>Luxury Resorts</option>
+                                                <option>Private Pool Villas</option>
+                                                <option>Boutique Resorts</option>
+                                                <option>Budget-Friendly Resorts</option>
+                                                <option>Experiential Stays</option>
+                                            </select>
+                                        </div>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                        <input type="text" id="budget" name="budget" placeholder="Your Budget" required>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="budget" class="form-label">Your Budget</label>
+                                            <input type="text" class="form-control form-control-lg" id="budget"
+                                                name="budget" required>
+                                        </div>
                                     </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                        <textarea id="message" name="message" placeholder="Write your message here"
-                                            required></textarea>
+
+                                    <!-- Message Textarea -->
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for="message" class="form-label">Write your message here</label>
+                                            <textarea class="form-control form-control-lg" id="message" name="message"
+                                                rows="4" required></textarea>
+                                        </div>
                                     </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 form-group message-btn">
-                                        <button class="theme-btn" type="submit">Submit Now</button>
+
+                                    <!-- Submit Button -->
+                                    <div class="col-12 text-center mt-4">
+                                        <button class="btn btn-dark btn-lg px-5 py-3 fw-bold" type="submit">Submit
+                                            Now</button>
                                     </div>
                                 </div>
                             </form>
+
 
                         </div>
                     </div>
@@ -293,6 +329,8 @@
             </div>
         </section>
         <!-- contact-section end -->
+
+
 
 
         <footer class="main-footer bg-color-2">
@@ -418,37 +456,82 @@
         </a>
     </div>
 
+    <div class="position-fixed top-0 end-0 p-3" style="z-index: 9999; width: auto; max-width: 100vw;">
+        <div id="formToast" class="toast align-items-center text-bg-danger border-0 shadow-lg" role="alert"
+            aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body" id="toastMessage">
+                    <!-- Message goes here -->
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+                    aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
 
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- ✅ Script -->
     <script>
         function sendToWhatsApp() {
-            const name = document.getElementById("name").value.trim();
-            const email = document.getElementById("email").value.trim();
-            const phone = document.getElementById("phone").value.trim();
-            const date = document.getElementById("date").value;
-            const type = document.getElementById("resortType").value;
-            const budget = document.getElementById("budget").value.trim();
-            const message = document.getElementById("message").value.trim();
+            const nameInput = document.getElementById("name");
+            const emailInput = document.getElementById("email");
+            const phoneInput = document.getElementById("phone");
+            const dateInput = document.getElementById("date");
+            const typeInput = document.getElementById("resortType");
+            const budgetInput = document.getElementById("budget");
+            const messageInput = document.getElementById("message");
+
+            const name = nameInput.value.trim();
+            const email = emailInput.value.trim();
+            const phone = phoneInput.value.trim();
+            const date = dateInput.value;
+            const type = typeInput.value;
+            const budget = budgetInput.value.trim();
+            const message = messageInput.value.trim();
+
+            // Replace values with trimmed ones
+            nameInput.value = name;
+            emailInput.value = email;
+            phoneInput.value = phone;
+            budgetInput.value = budget;
+            messageInput.value = message;
 
             if (!name || !email || !phone || !date || !type || !budget || !message) {
-                alert("Please fill in all fields.");
+                showToast("Please fill in all fields properly.");
                 return false;
             }
 
-            const text = `New Resort Inquiry 
-                        Name: ${name}
-                        Email: ${email}
-                        Phone: ${phone}
-                        Date: ${date}
-                        Resort Type: ${type}
-                        Budget: ${budget}
-                        Message: ${message}`;
+            const text = `New Resort Inquiry
+Name: ${name}
+Email: ${email}
+Phone: ${phone}
+Date: ${date}
+Resort Type: ${type}
+Budget: ${budget}
+Message: ${message}`;
 
             const url = `https://wa.me/919744161939?text=${encodeURIComponent(text)}`;
             window.open(url, "_blank");
 
-            return false; // Prevent actual form submission
+            return false;
+        }
+
+        function showToast(msg) {
+            const toastEl = document.getElementById("formToast");
+            const toastBody = document.getElementById("toastMessage");
+            toastBody.textContent = msg;
+
+            const toast = new bootstrap.Toast(toastEl, {
+                delay: 6000
+            });
+            toast.show();
         }
     </script>
+
 
 
     <!-- jequery plugins -->

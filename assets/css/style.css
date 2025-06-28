@@ -7614,3 +7614,18 @@ div#mCSB_1_container{
       font-size: 20px;
     }
   }
+
+
+  .input-error {
+    border: 1px solid red !important;
+    background-color: #fff0f0;
+  }
+
+  textarea.input-error {
+    resize: vertical;
+  }
+
+  .error{
+    color: red;
+    font-size: 12px;
+  }
